@@ -18,7 +18,14 @@ module.exports = grammar({
       ';'
     ),
 
-    statement: $ => seq($.block_comment, $.assignment_statement),
+    statement: $ => seq(repeat($.comment), $.assignment_statement),
+
+
+    comment: $ => choice(
+      $.line_comment,
+      $.block_comment,
+    ),
+
 
     block_comment: $ => token(
       seq(
@@ -27,5 +34,9 @@ module.exports = grammar({
         '/'
       )
     ),
+
+    line_comment: $ => token(seq('//', /[^\n]*/)),
+
+
   }
 });

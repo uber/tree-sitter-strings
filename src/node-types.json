@@ -36,6 +36,25 @@
     }
   },
   {
+    "type": "comment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block_comment",
+          "named": true
+        },
+        {
+          "type": "line_comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "program",
     "named": true,
     "fields": {},
@@ -63,7 +82,7 @@
           "named": true
         },
         {
-          "type": "block_comment",
+          "type": "comment",
           "named": true
         }
       ]
@@ -79,6 +98,10 @@
   },
   {
     "type": "block_comment",
+    "named": true
+  },
+  {
+    "type": "line_comment",
     "named": true
   },
   {
