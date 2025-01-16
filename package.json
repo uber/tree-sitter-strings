@@ -1,5 +1,5 @@
 {
-  "name": "tree-sitter-strings",
+  "name": "@uber/tree-sitter-strings",
   "version": "0.0.1",
   "description": "strings grammar for tree-sitter",
   "main": "bindings/node",
